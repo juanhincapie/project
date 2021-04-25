@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $montserrat;
+  transition: color 1s ease;
+  color: $white;
+}
+
+h1 {
+  font-size: $xxxxx-large;
+  font-weight: $semi-bold;
+}
+
+h2 {
+  font-size: $xx-large;
+  font-weight: $semi-bold;
+}
+
+h3 {
+  font-size: $xx-large;
+  font-weight: $semi-bold;
+}
+
+h4 {
+  font-size: x-large;
+  font-weight: $semi-bold;
+}
+
+a{
+  font-family: $montserrat;
+  font-size: $medium;
+  font-weight: $regular;
+  color: $white;
+  
+}
+
+p {
+  font-family: $montserrat;
+  font-size: $medium;
+  font-weight: $regular;
+  line-height: 1.8;
+  color: $white;
+}
+
+button {
+  font-family: $montserrat;
+  font-weight: $regular;
+  font-size: $small;
+}

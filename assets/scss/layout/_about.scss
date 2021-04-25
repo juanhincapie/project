@@ -1,0 +1,123 @@
+.about {
+  &__info{
+    &__title {
+      margin: 1.5rem 0 4rem 0;
+      &:after {
+        background: none repeat scroll 0 0 $beige;
+        bottom: -15px;
+        content: "";
+        display: block;
+        height: 5px;
+        position: relative;
+        width: 160px;
+      }
+    }
+    &__text {
+      text-align: justify;
+      margin-bottom: 2.5rem;
+    }
+    &__tools{
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      justify-content: space-between;
+      img{
+        width: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &__btn {
+      margin-top: 1.5rem;
+      width: 200px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__img{
+    display: none;
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .about {
+    &__info {
+      text-align: center;
+      &__title {
+        &:after {
+          left: 315px;
+        }
+      }
+      &__tools{
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .about {
+      &__info {
+        text-align: left;
+
+        &__title {
+          margin-bottom: 2rem;
+          &:after {
+            width: 130px;
+            margin-top: 1rem;
+            position: inherit;
+          }
+        }
+
+        &__tools {
+          justify-content: start;
+          img{
+            margin-right: 2rem;
+          }
+        }
+
+        &__btn {
+          margin-top: 1.5rem;
+          position: inherit;
+        }
+      }
+      &__img {
+        display: flex;
+        width: 400px;
+        place-items: center;
+        justify-content: center;
+        position: relative;
+        img{
+          width: 220px;
+          z-index: 1;
+        }
+        .outline{
+          border: .4rem solid $beige;
+          position: absolute;
+          width: 220px;
+          height: 294px;
+          left: 10%;
+          top: 20%;
+        }
+        .full{
+          background-color: $dark-gray;
+          position: absolute;
+          width: 220px;
+          height: 294px;
+          right: 10%;
+          bottom: 20%;
+        }
+      }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
