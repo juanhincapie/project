@@ -67,7 +67,12 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  
+  .container {
+    padding: 3% 5%;
+  }
+  .header-wrapper {
+    align-items: stretch;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)

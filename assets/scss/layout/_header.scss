@@ -81,34 +81,24 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .header {
-    text-align: left;
-    min-width: 100%;
-    padding-left: 4%;
-
+    margin-top: 3rem;
     &__title {
-      font-size: 2.7rem;
-      margin-bottom: .8rem;
+      font-size: 3rem;
     }
-
     &__subtitle {
-      margin-bottom: 1.5rem;
-      color: $beige;
-    }
-
-    &__biography {
-      text-align: left;
-      padding: 0;
-      width: 100%;
       margin-bottom: 2rem;
     }
-
+    &__biography {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
     &__button {
       display: flex;
       place-items: center;
       color: $beige;
 
       i {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-right: 1rem;
       }
 
@@ -124,8 +114,8 @@
 
     &-lg {
       display: block;
-      width: 100%;
-      padding-right: 50px;
+      width: 90%;
+      padding-right: 0;
     }
   }
 }
