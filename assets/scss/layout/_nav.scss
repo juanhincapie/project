@@ -6,7 +6,6 @@
     width: 3rem;
   }
 }
-
 ul{
   display: none;
 }
@@ -19,7 +18,6 @@ ul{
   }
   ul{
     display: flex;
-    
     li > a{
       text-decoration: none;
       margin-left: 1.5rem;
@@ -28,7 +26,7 @@ ul{
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .navbar {
     &__logo {
       width: 4rem;

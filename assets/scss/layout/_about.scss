@@ -63,38 +63,30 @@
   .about {
     &__info {
       text-align: left;
-
       &__title {
         margin-bottom: 2rem;
-
         &:after {
           width: 130px;
           margin-top: 1rem;
           position: inherit;
         }
       }
-
       &__tools {
         justify-content: start;
-
         img {
           margin-right: 2rem;
         }
       }
-
       &__btn {
-        margin-top: 1.5rem;
         position: inherit;
       }
     }
-
     &__img {
       width: 400px;
       display: flex;
       place-items: center;
       justify-content: center;
       z-index: 1;
-
       &-wrapper{
         position: relative;
         display: flex;
@@ -102,11 +94,9 @@
         justify-content: center;
         width: 320px;
         height: 400px;
-
         img {
           width: 220px;
         }
-
         .outline {
           border: .4rem solid $beige;
           position: absolute;
@@ -116,7 +106,6 @@
           top: 0;
           z-index: -1;
         }
-
         .full {
           background-color: $dark-gray;
           position: absolute;
@@ -164,24 +153,16 @@
     }
     &__img {
       width: 750px;
-
       &-wrapper {
-        position: relative;
-        display: flex;
-        place-items: center;
-        justify-content: center;
         width: 390px;
         height: 470px;
-
         img {
           width: 280px;
         }
-
         .outline {
           width: 280px;
           height: 300px;
         }
-
         .full {
           width: 280px;
           height: 300px;

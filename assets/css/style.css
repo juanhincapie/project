@@ -36,45 +36,43 @@ main {
   display: block;
 }
 
+h1, h2, h3, h4, h5, a, p, button {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Montserrat", sans-serif;
   transition: color 1s ease;
   color: #FFF;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 3.125rem;
-  font-weight: 600;
 }
 
 h2 {
   font-size: 2.1875rem;
-  font-weight: 600;
 }
 
 h3 {
   font-size: 1.875rem;
-  font-weight: 600;
 }
 
 h4 {
-  font-size: x-large;
-  font-weight: 600;
+  font-size: 1.45rem;
 }
 
 a {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #FFF;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8;
@@ -82,9 +80,8 @@ p {
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 *,
@@ -125,45 +122,43 @@ main {
   display: block;
 }
 
+h1, h2, h3, h4, h5, a, p, button {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Montserrat", sans-serif;
   transition: color 1s ease;
   color: #FFF;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 3.125rem;
-  font-weight: 600;
 }
 
 h2 {
   font-size: 2.1875rem;
-  font-weight: 600;
 }
 
 h3 {
   font-size: 1.875rem;
-  font-weight: 600;
 }
 
 h4 {
-  font-size: x-large;
-  font-weight: 600;
+  font-size: 1.45rem;
 }
 
 a {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #FFF;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8;
@@ -171,9 +166,8 @@ p {
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .navbar {
@@ -203,7 +197,7 @@ ul {
     margin-left: 1.5rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .navbar__logo {
     width: 4rem;
   }
@@ -247,12 +241,6 @@ ul {
     text-align: center;
     padding: 0 3rem;
   }
-
-  .hero-image {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 768px) {
   .header {
@@ -260,13 +248,8 @@ ul {
     min-width: 100%;
     padding-left: 4%;
   }
-  .header__title {
-    font-size: 2.7rem;
-    margin-bottom: 0.8rem;
-  }
   .header__subtitle {
     margin-bottom: 1.5rem;
-    color: #B7B377;
   }
   .header__biography {
     text-align: left;
@@ -323,12 +306,15 @@ ul {
   }
   .header__title {
     font-size: 4rem;
+    margin-bottom: 1.5rem;
   }
   .header__subtitle {
     font-size: 2.8rem;
+    margin-bottom: 2.5rem;
   }
   .header__biography {
     width: 55ch;
+    margin-bottom: 2.5rem;
   }
 
   .hero-image-lg {
@@ -404,7 +390,6 @@ ul {
     margin-right: 2rem;
   }
   .about__info__btn {
-    margin-top: 1.5rem;
     position: inherit;
   }
   .about__img {
@@ -468,10 +453,6 @@ ul {
     width: 750px;
   }
   .about__img-wrapper {
-    position: relative;
-    display: flex;
-    place-items: center;
-    justify-content: center;
     width: 390px;
     height: 470px;
   }
@@ -531,17 +512,7 @@ ul {
     justify-content: center;
   }
   .contact__wrapper {
-    display: flex;
-    place-items: center;
     margin-bottom: 0;
-  }
-  .contact__links {
-    margin-top: 2rem;
-    list-style-type: none;
-    color: #B7B377;
-    font-size: 4rem;
-    display: flex;
-    justify-content: space-evenly;
   }
 }
 .container {
@@ -558,7 +529,7 @@ ul {
 
 .about-wrapper {
   background-color: #292C32;
-  padding: 1rem 0;
+  padding: 1rem 0 6rem 0;
 }
 
 .portfolio-wrapper {
@@ -591,6 +562,9 @@ ul {
   .about {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+  .about-wrapper {
+    padding: 1rem 0;
   }
   .about__img {
     grid-column: 1/2;
@@ -635,7 +609,7 @@ ul {
     margin-left: 1.5rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .navbar__logo {
     width: 4rem;
   }
@@ -679,12 +653,6 @@ ul {
     text-align: center;
     padding: 0 3rem;
   }
-
-  .hero-image {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 768px) {
   .header {
@@ -692,13 +660,8 @@ ul {
     min-width: 100%;
     padding-left: 4%;
   }
-  .header__title {
-    font-size: 2.7rem;
-    margin-bottom: 0.8rem;
-  }
   .header__subtitle {
     margin-bottom: 1.5rem;
-    color: #B7B377;
   }
   .header__biography {
     text-align: left;
@@ -755,12 +718,15 @@ ul {
   }
   .header__title {
     font-size: 4rem;
+    margin-bottom: 1.5rem;
   }
   .header__subtitle {
     font-size: 2.8rem;
+    margin-bottom: 2.5rem;
   }
   .header__biography {
     width: 55ch;
+    margin-bottom: 2.5rem;
   }
 
   .hero-image-lg {
@@ -836,7 +802,6 @@ ul {
     margin-right: 2rem;
   }
   .about__info__btn {
-    margin-top: 1.5rem;
     position: inherit;
   }
   .about__img {
@@ -900,10 +865,6 @@ ul {
     width: 750px;
   }
   .about__img-wrapper {
-    position: relative;
-    display: flex;
-    place-items: center;
-    justify-content: center;
     width: 390px;
     height: 470px;
   }
@@ -963,24 +924,12 @@ ul {
     justify-content: center;
   }
   .contact__wrapper {
-    display: flex;
-    place-items: center;
     margin-bottom: 0;
-  }
-  .contact__links {
-    margin-top: 2rem;
-    list-style-type: none;
-    color: #B7B377;
-    font-size: 4rem;
-    display: flex;
-    justify-content: space-evenly;
   }
 }
 .outline-btn {
   background-color: transparent;
   color: #B7B377;
-  font-size: 1rem;
-  font-weight: 600;
   border: 3px solid #B7B377;
 }
 .outline-btn:hover {
@@ -1051,23 +1000,24 @@ ul {
   }
 }
 @media (min-width: 1500px) {
-  .card {
-    display: flex;
-    align-content: center;
-  }
   .card__img {
     min-width: 850px;
     max-width: 850px;
     height: 500px;
   }
   .card__info {
-    display: grid;
-    align-content: center;
     padding: 0 3rem;
   }
-  .card__btn {
-    margin-top: 0.5rem;
-    width: 150px;
+  .card__info__title {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+  .card__info__description {
+    margin-bottom: 2rem;
+  }
+  .card__tools img {
+    width: 3rem;
+    margin: 0 1.5rem 2rem 0;
   }
 }
 

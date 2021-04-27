@@ -44,9 +44,6 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .card {
@@ -72,24 +69,26 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1500px) {
   .card {
-    display: flex;
-    align-content: center;
-
     &__img {
       min-width: 850px;
       max-width: 850px;
       height: 500px;
     }
-
     &__info {
-      display: grid;
-      align-content: center;
       padding: 0 3rem;
+      &__title{
+        font-size: 1.875rem;
+        margin-bottom: 1.5rem;
+      }
+      &__description{
+        margin-bottom: 2rem;
+      }
     }
-
-    &__btn {
-      margin-top: .5rem;
-      width: 150px;
+    &__tools {
+      img {
+        width: 3rem;
+        margin: 0 1.5rem 2rem 0;
+      }
     }
   }
 }

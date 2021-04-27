@@ -1,6 +1,5 @@
 @import 'nav';
 @import 'header';
-@import 'main';
 @import 'about';
 @import 'contact';
 
@@ -18,7 +17,7 @@
 
 .about-wrapper {
   background-color: $medium-gray;
-  padding: 1rem 0;
+  padding: 1rem 0 6rem 0;
 }
 
 .portfolio-wrapper {
@@ -29,10 +28,6 @@
 .contact-wrapper {
   background-color: $dark-gray;
   padding: 1rem 0;
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
 }
 
 // Medium devices (tablets, 768px and up)
@@ -55,6 +50,9 @@
   .about{
     display: grid;
     grid-template-columns: repeat(2, auto);
+    &-wrapper{
+      padding: 1rem 0;
+    }
     &__img{
       grid-column: 1 / 2;
     }
@@ -72,9 +70,4 @@
   .header-wrapper {
     align-items: stretch;
   }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  
 }

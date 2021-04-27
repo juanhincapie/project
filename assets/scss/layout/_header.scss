@@ -36,11 +36,6 @@
       padding: 0 3rem;
     }
   }
-  .hero-image {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -49,17 +44,9 @@
     text-align: left;
     min-width: 100%;
     padding-left: 4%;
-
-    &__title {
-      font-size: 2.7rem;
-      margin-bottom: .8rem;
-    }
-
     &__subtitle {
       margin-bottom: 1.5rem;
-      color: $beige;
     }
-
     &__biography {
       text-align: left;
       padding: 0;
@@ -67,14 +54,13 @@
       margin-bottom: 2rem;
     }
   }
-
   .hero-image {
     display: none;
-      &-lg {
-        display: block;
-        width: 100%;
-        padding-right: 50px;
-      }
+    &-lg {
+      display: block;
+      width: 100%;
+      padding-right: 50px;
+    }
   }
 }
 
@@ -96,19 +82,16 @@
       display: flex;
       place-items: center;
       color: $beige;
-
       i {
         font-size: 2rem;
         margin-right: 1rem;
       }
-
       a {
         font-weight: $medium;
         color: $beige;
       }
     }
   }
-
   .hero-image {
     &-lg {
       width: 90%;
@@ -121,20 +104,19 @@
 @media (min-width: 1500px) {
   .header {
     margin-top: 5rem;
-
     &__title {
       font-size: 4rem;
+      margin-bottom: 1.5rem;
     }
-    
     &__subtitle {
       font-size: 2.8rem;
+      margin-bottom: 2.5rem;
     }
-
     &__biography {
       width: 55ch;
+      margin-bottom: 2.5rem;
     }
   }
-
   .hero-image {
     &-lg {
       width: 85%;

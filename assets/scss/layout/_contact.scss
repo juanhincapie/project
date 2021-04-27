@@ -13,7 +13,6 @@
       width: 100px;
     }
   }
-
   &__wrapper{
     margin-top: 1.3rem;
     background-color: $accent-gray;
@@ -42,29 +41,8 @@
     text-align: center;
     display: grid;
     justify-content: center;
-
     &__wrapper {
-      display: flex;
-      place-items: center;
       margin-bottom: 0;
-    }
-
-    &__links {
-      margin-top: 2rem;
-      list-style-type: none;
-      color: $beige;
-      font-size: 4rem;
-      display: flex;
-      justify-content: space-evenly;
     }
   }
 }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
