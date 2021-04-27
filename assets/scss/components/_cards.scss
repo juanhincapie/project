@@ -70,4 +70,26 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1500px) {
+  .card {
+    display: flex;
+    align-content: center;
+
+    &__img {
+      min-width: 850px;
+      max-width: 850px;
+      height: 500px;
+    }
+
+    &__info {
+      display: grid;
+      align-content: center;
+      padding: 0 3rem;
+    }
+
+    &__btn {
+      margin-top: .5rem;
+      width: 150px;
+    }
+  }
+}

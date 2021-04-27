@@ -110,10 +110,7 @@
   }
 
   .hero-image {
-    display: none;
-
     &-lg {
-      display: block;
       width: 90%;
       padding-right: 0;
     }
@@ -121,4 +118,26 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1500px) {
+  .header {
+    margin-top: 5rem;
+
+    &__title {
+      font-size: 4rem;
+    }
+    
+    &__subtitle {
+      font-size: 2.8rem;
+    }
+
+    &__biography {
+      width: 55ch;
+    }
+  }
+
+  .hero-image {
+    &-lg {
+      width: 85%;
+    }
+  }
+}

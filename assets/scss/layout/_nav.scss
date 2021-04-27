@@ -11,9 +11,6 @@ ul{
   display: none;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .navbar {
@@ -30,10 +27,17 @@ ul{
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-}
-
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .navbar {
+    &__logo {
+      width: 4rem;
+    }
+  }
+  ul {
+    li>a {
+      margin-left: 2.5rem;
+    }
+  }
+}
 
