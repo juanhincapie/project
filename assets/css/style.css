@@ -523,6 +523,10 @@ ul {
 }
 .contact__links a {
   color: #B7B377;
+  transition: color 0.4s;
+}
+.contact__links a:hover {
+  color: #ece9b6;
 }
 
 @media (min-width: 576px) {
@@ -955,6 +959,10 @@ ul {
 }
 .contact__links a {
   color: #B7B377;
+  transition: color 0.4s;
+}
+.contact__links a:hover {
+  color: #ece9b6;
 }
 
 @media (min-width: 576px) {

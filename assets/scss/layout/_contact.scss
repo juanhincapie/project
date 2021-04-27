@@ -37,6 +37,10 @@
       justify-content: space-evenly;
       a{
         color: $beige;
+        transition: color .4s;
+        &:hover {
+          color: $light-beige;
+        }
       }
   }
 }
