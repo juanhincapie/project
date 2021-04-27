@@ -5,7 +5,7 @@ btn.addEventListener('click', () => {
   console.log('u clicked me');
 })
 
-const links = document.querySelectorAll(".navbar ul a");
+const links = document.getElementById("link");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
