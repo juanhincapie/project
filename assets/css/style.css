@@ -73,6 +73,11 @@ li > a {
   color: #FFF;
 }
 
+a {
+  color: #B7B377;
+  text-decoration: none;
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
@@ -158,6 +163,11 @@ li > a {
   font-size: 1rem;
   font-weight: 400;
   color: #FFF;
+}
+
+a {
+  color: #B7B377;
+  text-decoration: none;
 }
 
 p {
@@ -524,7 +534,6 @@ ul {
   justify-content: space-evenly;
 }
 .contact__links a {
-  color: #B7B377;
   transition: color 0.4s;
 }
 .contact__links a:hover {
@@ -960,7 +969,6 @@ ul {
   justify-content: space-evenly;
 }
 .contact__links a {
-  color: #B7B377;
   transition: color 0.4s;
 }
 .contact__links a:hover {
@@ -979,9 +987,9 @@ ul {
 }
 .outline-btn {
   background-color: transparent;
-  color: #B7B377;
   border: 3px solid #B7B377;
   transition: background-color 0.5s;
+  color: #B7B377;
 }
 .outline-btn:hover {
   background-color: #B7B377;
@@ -990,6 +998,9 @@ ul {
 .outline-btn:focus {
   background-color: #8f8d66;
   border: 3px solid #8f8d66;
+  color: #FFF;
+}
+.outline-btn:focus, .outline-btn:hover a {
   color: #FFF;
 }
 
