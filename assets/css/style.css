@@ -21,6 +21,7 @@ body {
 }
 
 html, body {
+  scroll-behavior: smooth;
   background-color: #1C2025;
 }
 
@@ -107,6 +108,7 @@ body {
 }
 
 html, body {
+  scroll-behavior: smooth;
   background-color: #1C2025;
 }
 

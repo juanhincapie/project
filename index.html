@@ -10,28 +10,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f0c8e7e646.js" crossorigin="anonymous"></script>
   <title>Diego Hincapie | Portfolio</title>
+  <link rel="shortcut icon" type="image/jpg" href="./assets/img/logo.svg" />
 </head>
 
 <body>
   <div class="header-wrapper">
-    <div class="container nav-container">
+    <div id="home" class="container nav-container">
       <!-- Navbar -->
       <nav id="navbar" class="navbar">
-        <a href="#">
+        <a href="#home">
           <img class="navbar__logo" src="./assets/img/logo.svg" alt="Logo">
         </a>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -54,10 +55,10 @@
     <img class="hero-image" src="./assets/img/hero.png" alt="Hero Image">
     <img class="hero-image-lg" src="./assets/img/hero-lg.png" alt="Hero Image">
   </div>
-  <div class="about-wrapper">
+  <div id="about" class="about-wrapper">
     <div class="container">
       <!-- About me -->
-      <section id="about" class="about">
+      <section class="about">
         <div class="about__img">
           <div class="about__img-wrapper">
             <img src="./assets/img/me.png" alt="Diego's Photo">
@@ -91,10 +92,10 @@
       </section>
     </div>
   </div>
-  <div class="portfolio-wrapper">
+  <div id="portfolio" class="portfolio-wrapper">
     <div class="container">
       <!-- Portfolio -->
-      <main id="portfolio" class="portfolio">
+      <main class="portfolio">
         <!-- Card 1 -->
         <div class="card">
           <div class="card__img">
@@ -306,10 +307,10 @@
       </main>
     </div>
   </div>
-  <div class="contact-wrapper">
+  <div id="contact" class="contact-wrapper">
     <div class="container">
       <!-- Contact -->
-      <section id="contact" class="contact">
+      <section class="contact">
         <h2 class="contact__title">Let's Work Together!</h2>
         <div class="contact__wrapper">
           <a href="mailto:Jdhincapie11@gmail.com"><i class="fas fa-envelope"></i></a>
