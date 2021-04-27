@@ -2,9 +2,14 @@
   background-color: transparent;
   color: $beige;
   border: 3px solid $beige;
+  transition: background-color .5s;
   &:hover{
     background-color: $beige;
     color: $white;
-    border: none;
+  }
+  &:focus{
+    background-color: #8f8d66;
+    border: 3px solid #8f8d66;
+    color: $white;
   }
 }

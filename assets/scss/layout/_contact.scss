@@ -20,18 +20,24 @@
     border-radius: 5px;
     padding: .8rem 1.5rem;
     place-items: center;
+    a{
+      color: $white;
+      text-decoration: none;
+    }
     i{
       font-size: 1.4rem;
       margin-right: 1rem;
     }
   }
-  &__links{
+  &__links {
       margin-top: 2rem;
       list-style-type: none;
-      color: $beige;
       font-size: 4rem;
       display: flex;
       justify-content: space-evenly;
+      a{
+        color: $beige;
+      }
   }
 }
 
