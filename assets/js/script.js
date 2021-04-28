@@ -1,23 +1,31 @@
-const btn = document.getElementById('button')
-const img = document.getElementById('image')
+const modal = document.querySelector('.card__modal')
+const previews = document.querySelectorAll('.card__img img')
+const original = document.querySelector('.full-img')
+const button = document.querySelectorAll('.card__btn')
 
-btn.addEventListener('click', () => {
-  console.log('u clicked me');
+previews.forEach((e) => {
+  e.addEventListener('click', () => {
+    modal.classList.add('card__modal-open');
+    original.classList.add('card__modal__img-open')
+
+    const originalSrc = e.getAttribute('data-original')
+    original.src = `./assets/img/${originalSrc}`
+  })
 })
 
-const links = document.getElementById("link");
+button.forEach((e) => {
+  e.addEventListener('click', () => {
+    modal.classList.add('card__modal-open');
+    original.classList.add('card__modal__img-open')
 
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
+    const originalSrc = e.getAttribute('data-original')
+    original.src = `./assets/img/${originalSrc}`
+  })
+})
 
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
+modal.addEventListener('click', (e) => {
+  if (e.target.classList.contains('card__modal')) {
+    modal.classList.remove('card__modal-open')
+    original.classList.remove('card__modal__img-open')
+  }
+})
