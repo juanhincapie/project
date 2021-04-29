@@ -31,11 +31,15 @@
 
     &__img{
       position: absolute;
-      height: 95%;
+      max-width: 90%;
+      max-height: 90%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(0.5);
       transition: all .25s ease-out;
+      img{
+        object-fit: cover;
+      }
     }
   }
   &__info{
